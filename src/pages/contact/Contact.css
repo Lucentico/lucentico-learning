@@ -1,4 +1,4 @@
-.contact-bottom {
+/* .contact-bottom {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
@@ -16,17 +16,16 @@
 
 .contact-bottom-right {
   flex: 1;
-}
+} */
 
-.contact-box {
+/* .contact-box {
   text-align: left;
   padding: 10px 20px;
   border: none;
   border-radius: 8px;
-  /* width: 400px; */
   background-color: var(--bg-soft);
-}
-
+} */
+/* 
 .contact-box:hover {
   background-color: var(--brand-purple);
 }
@@ -47,8 +46,10 @@
   justify-content: space-between;
   flex-direction: column;
   gap: 20px;
-}
+} */
 
+
+/* 
 input,
 textarea {
   width: 100%;
@@ -88,8 +89,8 @@ textarea::placeholder {
 .contact-bottom-left a{
   text-decoration: none;
   color: var(--text-dark);
-}
-
+} */
+/* 
 @media only screen and (max-width: 768px) {
   .inner-page {
    gap: 10px;
@@ -108,4 +109,4 @@ textarea::placeholder {
   .contact-bottom-right {
     width: 100%;
   }
-}
+} */

@@ -71,7 +71,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="hero">
+    <section id="top" className="hero">
       <div className="hero-inner">
         {/* LEFT SIDE */}
         <motion.div

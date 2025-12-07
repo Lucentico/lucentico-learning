@@ -6,7 +6,7 @@ const CTASection = () => {
   const phoneNumber = "+91-7275747545"; // replace with your number
 
   return (
-    <section className="cta">
+    <section id="cta" className="cta">
       <div className="cta-inner">
         <div className="cta-card">
           <div className="cta-main">
@@ -54,7 +54,7 @@ const CTASection = () => {
             </div>
             <div className="cta-contact-row">
               <span className="cta-label">Location</span>
-              <p>Rajajipuram, Lucknow, Uttar Pradesh</p>
+              <p>E-2600, Rajajipuram, Lucknow, Uttar Pradesh</p>
             </div>
             <p className="cta-small">
               Prefer talking instead of filling forms? Just call or message.

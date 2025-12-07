@@ -1,7 +1,7 @@
 /* src/components/FeesSection/FeesSection.css */
 
 .fees {
-  padding: 4.5rem 1.5rem;
+  padding: 8rem 1.5rem;
   background: var(--bg-soft);
 }
 
@@ -17,7 +17,8 @@
 }
 
 .fees-tagline {
-  font-size: 0.8rem;
+  font-size: 1rem;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--brand-purple-dark);
@@ -31,7 +32,7 @@
 }
 
 .fees-subtitle {
-  font-size: 0.96rem;
+  font-size: 1.4rem;
   color: var(--text-gray);
 }
 
@@ -55,7 +56,7 @@
 }
 
 .fees-program-title {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: var(--text-dark);
   margin-bottom: 1.25rem;
@@ -76,7 +77,8 @@
 }
 
 .fees-label {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--brand-purple-dark);
@@ -91,14 +93,14 @@
 }
 
 .fees-price span {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #6b7280;
   margin-left: 0.1rem;
 }
 
 .fees-total {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: #4b5563;
 }
 
@@ -106,7 +108,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--text-gray);
 }
 
@@ -123,7 +125,7 @@
 }
 
 .fees-included h4 {
-  font-size: 0.95rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: var(--text-dark);
   margin-bottom: 0.5rem;
@@ -132,7 +134,7 @@
 .fees-included ul {
   padding-left: 1.1rem;
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: var(--text-gray);
 }
 
@@ -143,15 +145,15 @@
 /* CTA */
 
 .fees-cta {
-  margin-top: 1.4rem;
+  margin-top: 1.9rem;
 }
 
 .fees-cta .btn-primary {
-  margin-bottom: 0.6rem;
+  margin-bottom: 1rem;
 }
 
 .fees-note {
-  font-size: 0.86rem;
+  font-size: 1rem;
   color: #4b5563;
 }
 
@@ -163,12 +165,12 @@
   padding: 1.5rem 1.45rem;
   border: 1px solid var(--border-light);
   box-shadow: 0 16px 32px rgba(15, 23, 42, 0.06);
-  font-size: 0.93rem;
+  font-size: 1.2rem;
   color: var(--text-gray);
 }
 
 .fees-side-card h3 {
-  font-size: 1.05rem;
+  font-size: 1.5rem;
   color: var(--text-dark);
   margin-bottom: 0.6rem;
 }
@@ -187,7 +189,7 @@
 }
 
 .fees-side-note {
-  font-size: 0.88rem;
+  font-size: 1rem;
   color: #374151;
 }
 

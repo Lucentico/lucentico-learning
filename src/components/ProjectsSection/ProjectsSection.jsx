@@ -49,7 +49,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section className="projects">
+    <section id="projects" className="projects">
       <div className="projects-inner">
         <div className="projects-header">
           <p className="projects-tagline">Projects</p>

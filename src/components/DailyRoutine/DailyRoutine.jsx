@@ -43,7 +43,7 @@ const DailyRoutine = () => {
   ];
 
   return (
-    <section className="routine">
+    <section id="routine" className="routine">
       <div className="routine-inner">
         <div className="routine-header">
           <p className="routine-tagline">Daily Life at Lucentico</p>

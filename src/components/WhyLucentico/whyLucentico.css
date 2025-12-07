@@ -1,7 +1,6 @@
-/* src/components/WhyLucentico/WhyLucentico.css */
 
 .why {
-  padding: 4rem 1.5rem;
+  padding: 8rem 1.5rem;
   background: var(--bg-soft);
 }
 
@@ -17,7 +16,8 @@
 }
 
 .why-tagline {
-  font-size: 0.8rem;
+  font-size: 1rem;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--brand-purple-dark);
@@ -31,7 +31,7 @@
 }
 
 .why-subtitle {
-  font-size: 0.95rem;
+  font-size: 1.4rem;
   color: var(--text-gray);
 }
 
@@ -69,13 +69,13 @@
 }
 
 .why-card-title {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: var(--text-dark);
 }
 
 .why-card-body {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--text-gray);
 }
 

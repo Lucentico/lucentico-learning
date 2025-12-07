@@ -4,6 +4,8 @@
   background: #020617;
   color: #e5e7eb;
   padding: 2.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-inner {
@@ -11,11 +13,11 @@
   margin: 0 auto;
   display: grid;
   height: 150px;
-  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr) minmax(0, 1.1fr);
+  grid-template-columns: 3fr 1fr 2fr;
   gap: 2rem;
   align-items: flex-start;
   border-bottom: 1px solid rgba(148, 163, 184, 0.4);
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 /* Brand */
@@ -40,13 +42,13 @@
 }
 
 .footer-logo-text {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #f9fafb;
 }
 
 .footer-logo-sub {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: #9ca3af;
   margin-top: 0.2rem;
 }
@@ -57,7 +59,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 .footer-link {
@@ -72,16 +74,15 @@
 /* Contact */
 
 .footer-contact-title {
-  font-size: 0.9rem;
+  font-size: 1.4rem;
   font-weight: 600;
   color: #f9fafb;
-  margin-bottom: 0.45rem;
 }
 
 .footer-contact-line {
-  font-size: 0.85rem;
+  font-size: 1.1rem;
   color: #d1d5db;
-  margin: 0.1rem 0;
+  margin: 1rem 0;
   text-decoration: none;
 }
 
@@ -95,7 +96,7 @@
   max-width: 1100px;
   margin: 0.75rem auto 0;
   padding-top: 0.75rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #6b7280;
   text-align: center;
 }
@@ -121,4 +122,43 @@
   .footer-brand {
     align-items: center;
   }
+}
+
+.footer-link {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 0.9rem;
+  color: #d1d5db;
+  cursor: pointer;
+  text-align: left;
+}
+
+.footer-link:hover {
+  color: var(--brand-purple);
+}
+
+.footer-active {
+  color: var(--brand-purple);
+  font-weight: 600;
+}
+.footer-active {
+  position: relative;
+}
+
+.footer-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: var(--brand-purple);
+  border-radius: 1px;
+}
+
+.footer-lucentico-title {
+  margin: 0 auto;
+  font-size: 15rem;
+  font-weight: 100;
 }

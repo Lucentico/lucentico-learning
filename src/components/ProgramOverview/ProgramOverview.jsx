@@ -51,7 +51,7 @@ const ProgramOverview = () => {
   ];
 
   return (
-    <section className="program">
+    <section id="program" className="program">
       <div className="program-inner">
         <div className="program-header">
           <p className="program-tagline">The Program</p>

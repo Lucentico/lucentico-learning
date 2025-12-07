@@ -3,7 +3,7 @@ import "./FeesSection.css";
 
 const FeesSection = () => {
   return (
-    <section className="fees">
+    <section id="fees" className="fees">
       <div className="fees-inner">
         <div className="fees-header">
           <p className="fees-tagline">Fees & Seats</p>

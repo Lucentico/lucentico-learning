@@ -1,23 +1,27 @@
+// src/components/Navbar/Navbar.jsx
 import React, { useState } from "react";
 import "./navbar.css";
 import { motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ activeSection, handleScrollTo }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const containerVariants = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 0, y: -10 },
     visible: {
       opacity: 1,
+      y: 0,
       transition: {
-        delayChildren: 0.5, // Delay children animations
-        staggerChildren: 0.2, // Stagger children animations
+        duration: 0.4,
+        ease: "easeOut",
+        delayChildren: 0.1,
+        staggerChildren: 0.08,
       },
     },
   };
 
   const childVariants = {
-    hidden: { opacity: 0, y: -20 },
+    hidden: { opacity: 0, y: -10 },
     visible: { opacity: 1, y: 0 },
   };
 
@@ -25,66 +29,125 @@ const Navbar = () => {
     setIsMobileMenuOpen((prev) => !prev);
   };
 
-  const handleNavClick = () => {
-    setIsMobileMenuOpen(false);
+  const closeMenu = () => setIsMobileMenuOpen(false);
+
+  const handleClickAndClose = (id) => {
+    handleScrollTo(id);
+    closeMenu();
   };
 
+  const whatsappLink = "https://wa.me/917275747545";
+
   return (
-    <>
-      <motion.nav
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-        className="nav"
-      >
+    <motion.nav
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      className="nav"
+    >
+      <div className="nav-inner">
+        {/* Logo */}
         <motion.div variants={childVariants} className="nav-logo">
-          <NavLink to="/">
-            <span className="brand-purple">L</span>ucentico
-          </NavLink>
+          <button
+            className="nav-logo-btn"
+            onClick={() => handleClickAndClose("top")}
+          >
+            <span className="nav-logo-circle">L</span>
+            <span className="nav-logo-text">Lucentico Learning</span>
+          </button>
         </motion.div>
 
-        {/* Hamburger icon - only visible on mobile */}
-        <div className="hamburger" onClick={toggleMobileMenu}>
+        {/* Hamburger (mobile) */}
+        <button
+          className={`hamburger ${isMobileMenuOpen ? "is-open" : ""}`}
+          onClick={toggleMobileMenu}
+          aria-label="Toggle navigation"
+        >
           <span></span>
           <span></span>
           <span></span>
-        </div>
-        {/* Regular nav - hidden on mobile */}
+        </button>
+
+        {/* Menu */}
         <div className={`nav-center ${isMobileMenuOpen ? "open" : ""}`}>
           <ul>
             <li>
-              <NavLink to="/" onClick={handleNavClick}>
+              <button
+                className={`nav-link-button ${
+                  activeSection === "top" ? "active-nav" : ""
+                }`}
+                onClick={() => handleClickAndClose("top")}
+              >
                 Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/" onClick={handleNavClick}>
-                Program
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/" onClick={handleNavClick}>
-                Curriculum
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/" onClick={handleNavClick}>
-                Fees
-              </NavLink>
+              </button>
             </li>
 
             <li>
-              <NavLink to="/contact" className="btn" onClick={handleNavClick}>
-                Contact
-              </NavLink>
+              <button
+                className={`nav-link-button ${
+                  activeSection === "program" ? "active-nav" : ""
+                }`}
+                onClick={() => handleClickAndClose("program")}
+              >
+                Program
+              </button>
             </li>
-            {/* <NavLink to="/hire" className="btn" onClick={handleNavClick}>
-              Hire me
-            </NavLink> */}
+
+            <li>
+              <button
+                className={`nav-link-button ${
+                  activeSection === "routine" ? "active-nav" : ""
+                }`}
+                onClick={() => handleClickAndClose("routine")}
+              >
+                Day at Lucentico
+              </button>
+            </li>
+
+            <li>
+              <button
+                className={`nav-link-button ${
+                  activeSection === "projects" ? "active-nav" : ""
+                }`}
+                onClick={() => handleClickAndClose("projects")}
+              >
+                Projects
+              </button>
+            </li>
+
+            <li>
+              <button
+                className={`nav-link-button ${
+                  activeSection === "fees" ? "active-nav" : ""
+                }`}
+                onClick={() => handleClickAndClose("fees")}
+              >
+                Fees
+              </button>
+            </li>
+
+            <li className="nav-contact-wrapper">
+              <button
+                className="nav-btn-primary"
+                onClick={() => (window.location.href = whatsappLink)}
+              >
+                Book Free Demo
+              </button>
+              {/* or use section-based highlight:
+              <button
+                className={`nav-btn-primary ${
+                  activeSection === "cta" ? "active-nav" : ""
+                }`}
+                onClick={() => handleClickAndClose("cta")}
+              >
+                Book Free Demo
+              </button>
+              */}
+            </li>
           </ul>
         </div>
-      </motion.nav>
-    </>
+      </div>
+    </motion.nav>
   );
 };
 

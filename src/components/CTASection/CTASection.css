@@ -1,7 +1,7 @@
 /* src/components/CallToActionSection/CallToActionSection.css */
 
 .cta {
-  padding: 4.5rem 1.5rem 4rem;
+  padding: 8rem 4rem;
   background: radial-gradient(
       circle at top left,
       rgba(143, 117, 255, 0.16),
@@ -34,7 +34,8 @@
 }
 
 .cta-tagline {
-  font-size: 0.8rem;
+  font-size: 1rem;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.16em;
   color: rgba(209, 213, 219, 0.9);
@@ -48,7 +49,7 @@
 }
 
 .cta-subtitle {
-  font-size: 0.96rem;
+  font-size: 1.4rem;
   color: #e5e7eb;
   margin-bottom: 1rem;
 }
@@ -57,7 +58,7 @@
   list-style: none;
   padding: 0;
   margin: 0 0 1.6rem;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: #e5e7eb;
 }
 
@@ -72,7 +73,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   color: var(--brand-purple);
 }
 
@@ -114,11 +115,11 @@
   padding: 1.4rem 1.3rem;
   background: radial-gradient(circle at top left, #0f172a, #020617 70%);
   border: 1px solid rgba(148, 163, 184, 0.5);
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 .cta-contact h3 {
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight: 600;
   color: #f9fafb;
   margin-bottom: 0.75rem;
@@ -127,11 +128,12 @@
 .cta-contact-row {
   display: flex;
   flex-direction: column;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .cta-label {
-  font-size: 0.78rem;
+  font-size: 1rem;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: #9ca3af;
@@ -152,7 +154,7 @@
 
 .cta-small {
   margin-top: 0.9rem;
-  font-size: 0.83rem;
+  font-size: 1rem;
   color: #d1d5db;
 }
 
