@@ -24,11 +24,11 @@
   border: none;
   border-radius: 8px;
   /* width: 400px; */
-  background-color: var(--accent);
+  background-color: var(--bg-soft);
 }
 
 .contact-box:hover {
-  background-color: var(--red);
+  background-color: var(--brand-purple);
 }
 
 .contact-box h3 {
@@ -38,7 +38,7 @@
 
 .contact-box p {
   font-size: 1rem;
-  color: var(--white);
+  color: var(--text-dark);
 }
 
 .contact-form {
@@ -55,16 +55,16 @@ textarea {
   padding: 10px;
   border: none;
   border-radius: 8px;
-  color: var(--white);
+  color: var(--text-dark);
   font-weight: 600;
   font-size: 1.2rem;
-  background-color: var(--accent);
+  background-color: var(--bg-soft);
   outline: none;
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: var(--white);
+  color: var(--text-gray);
   font-weight: 600;
   font-size: 1.2rem;
 }
@@ -77,8 +77,8 @@ textarea::placeholder {
   padding: 10px 20px;
   border: none;
   border-radius: 8px;
-  background-color: var(--red);
-  color: var(--white);
+  background-color: var(--brand-purple);
+  color: var(--text-dark);
   font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
@@ -87,7 +87,7 @@ textarea::placeholder {
 
 .contact-bottom-left a{
   text-decoration: none;
-  color: var(--white);
+  color: var(--text-dark);
 }
 
 @media only screen and (max-width: 768px) {

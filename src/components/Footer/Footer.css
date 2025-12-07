@@ -1,16 +1,124 @@
+/* src/components/Footer/Footer.css */
+
 .footer {
-  margin-top: auto;
+  background: #020617;
+  color: #e5e7eb;
+  padding: 2.5rem 1.5rem 1.5rem;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  height: 150px;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr) minmax(0, 1.1fr);
+  gap: 2rem;
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.4);
+  padding-bottom: 1.5rem;
+}
+
+/* Brand */
+
+.footer-brand {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+}
+
+.footer-logo-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: var(--brand-purple, #8f75ff);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #f9fafb;
+}
+
+.footer-logo-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f9fafb;
+}
+
+.footer-logo-sub {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-top: 0.2rem;
+}
+
+/* Links */
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+}
+
+.footer-link {
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--brand-purple, #8f75ff);
+}
+
+/* Contact */
+
+.footer-contact-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #f9fafb;
+  margin-bottom: 0.45rem;
+}
+
+.footer-contact-line {
+  font-size: 0.85rem;
+  color: #d1d5db;
+  margin: 0.1rem 0;
+  text-decoration: none;
+}
+
+.footer-contact-line:hover {
+  color: var(--brand-purple, #8f75ff);
+}
+
+/* Bottom */
+
+.footer-bottom {
+  max-width: 1100px;
+  margin: 0.75rem auto 0;
+  padding-top: 0.75rem;
+  font-size: 0.8rem;
+  color: #6b7280;
   text-align: center;
 }
 
-.copyleft {
-  display: inline-block;
-  text-align: right;
-  margin: 0px;
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: “FlipH”;
+/* Responsive */
+
+@media (max-width: 900px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 2.25rem 1.25rem 1.4rem;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer-brand {
+    align-items: center;
+  }
 }

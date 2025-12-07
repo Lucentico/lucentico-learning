@@ -35,10 +35,11 @@ const Navbar = () => {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
+        className="nav"
       >
         <motion.div variants={childVariants} className="nav-logo">
           <NavLink to="/">
-            <span className="red">L</span>ucentico
+            <span className="brand-purple">L</span>ucentico
           </NavLink>
         </motion.div>
 
@@ -57,25 +58,21 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/about" onClick={handleNavClick}>
-                About
+              <NavLink to="/" onClick={handleNavClick}>
+                Program
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services" onClick={handleNavClick}>
-                Services
+              <NavLink to="/" onClick={handleNavClick}>
+                Curriculum
               </NavLink>
             </li>
             <li>
-              <NavLink to="/portfolio" onClick={handleNavClick}>
-                Portfolio
+              <NavLink to="/" onClick={handleNavClick}>
+                Fees
               </NavLink>
             </li>
-            <li>
-              <NavLink to="/blogs" onClick={handleNavClick}>
-                Blog
-              </NavLink>
-            </li>
+
             <li>
               <NavLink to="/contact" className="btn" onClick={handleNavClick}>
                 Contact

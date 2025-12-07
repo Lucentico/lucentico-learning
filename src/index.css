@@ -1,30 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Montserrat, Inter, sans-serif;
+  font-family: Nunito, Montserrat, Inter, sans-serif;
   /* background-color: var(--background); */
-  color: var(--white);
 }
 
 :root {
-  /* --red: #e02424; */
-  --red: #8f75ff;
-  --background: #080f0f;
-  --accent: #0c1616;
-  --white: #e5e9ec;
-  --navy-blue-color: #1a237e;
+  --brand-purple: #8f75ff; /* CTA buttons & highlights */
+  --brand-purple-dark: #745de8; /* Button hover */
+
+  --text-dark: #111827; /* Headings */
+  --text-gray: #4b5563; /* Body text */
+  --text-light: #e8e3e3; /* light text */
+  --bg-light: #ffffff; /* Main background */
+  --bg-soft: #f8f9ff; /* Soft section background */
+
+  --border-light: #e5e7eb; /* Subtle borders */
 }
 
 body {
-  background-color: var(--background);
+  background-color: var(--bg-light);
 }
 
-.red {
-  color: var(--red);
+.brand-purple {
+  color: var(--brand-purple);
 }
 
 ul {
@@ -33,8 +38,8 @@ ul {
 }
 
 .btn {
-  background-color: var(--red);
-  color: var(--white);
+  background-color: var(--brand-purple);
+  color: var(--text-dark);
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
@@ -95,7 +100,7 @@ ul {
   gap: 6rem;
 }
 
-.flex{
+.flex {
   display: flex;
   width: 100%;
   /* justify-content: center; */
@@ -103,17 +108,17 @@ ul {
   gap: 20px;
 }
 
-::selection{
-  background-color: var(--red);
-  color: var(--white);
+::selection {
+  background-color: var(--brand-purple);
+  color: var(--text-dark);
 }
 
 @media only screen and (max-width: 768px) {
-  .fade{
+  .fade {
     font-size: 4.5rem;
   }
 
-  .shift-up{
+  .shift-up {
     margin-top: -4rem;
   }
 

@@ -59,7 +59,7 @@ const Contact = () => {
           </motion.h1>
           <div className="shift-up">
             <motion.h4 variants={childVariants}>Get in Touch</motion.h4>
-            <motion.h2 variants={childVariants} className="red">
+            <motion.h2 variants={childVariants} className="brand-purple">
               Reach Us
             </motion.h2>
           </div>

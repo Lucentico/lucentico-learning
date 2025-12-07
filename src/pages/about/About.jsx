@@ -33,7 +33,7 @@ const About = () => {
         </motion.h1>
         <div className="shift-up">
           <motion.h4 variants={childVariants}>Get to know us</motion.h4>
-          <motion.h2 variants={childVariants} className="red">
+          <motion.h2 variants={childVariants} className="brand-purple">
             About Us
           </motion.h2>
         </div>
