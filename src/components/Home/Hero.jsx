@@ -139,14 +139,25 @@ const Hero = () => {
               Book a Free Demo
             </button>
 
-            <NavLink
-              to="/curriculum"
+            {/* <NavLink
+              to="/curriculum.md"
               className="btn btn-secondary"
               onMouseEnter={() => setActiveSnippet("ctaSecondary")}
               onMouseLeave={() => setActiveSnippet("default")}
             >
               View Curriculum
-            </NavLink>
+            </NavLink> */}
+
+            <a
+              href="/curriculum.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-secondary"
+              onMouseEnter={() => setActiveSnippet("ctaSecondary")}
+              onMouseLeave={() => setActiveSnippet("default")}
+            >
+              View Curriculum
+            </a>
           </div>
 
           <p className="hero-meta">

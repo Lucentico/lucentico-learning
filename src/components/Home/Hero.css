@@ -57,14 +57,14 @@
 }
 
 .hero-points li {
-color: var(--bg-white);
+  color: var(--bg-white);
   margin-bottom: 0.55rem;
   font-size: 0.95rem;
   position: relative;
   padding: 10px;
   border-radius: 8px;
   cursor: default;
-  transform: skewX(-10deg);
+  transform: skewX(-5deg);
   background-color: var(--brand-purple);
 }
 /* 
@@ -209,6 +209,11 @@ color: var(--bg-white);
 
   .hero-subtitle {
     max-width: none;
+  }
+
+  .hero-points {
+    flex-direction: column;
+    gap: 3px;
   }
 
   .hero-actions {
