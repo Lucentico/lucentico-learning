@@ -2,8 +2,9 @@ import React from "react";
 import "./CTASection.css";
 
 const CTASection = () => {
-  const whatsappLink = "https://wa.me/917275747545"; // replace with your number
-  const phoneNumber = "+91-7275747545"; // replace with your number
+  const whatsappLink = "https://wa.me/917275747545";
+  const phoneNumber = "+91-7275747545";
+  const googleMapsLink = "https://maps.app.goo.gl/M55QXGgHGv27X6NW9";
 
   return (
     <section id="cta" className="cta">
@@ -56,6 +57,12 @@ const CTASection = () => {
               <span className="cta-label">Location</span>
               <p>E-2600, Rajajipuram, Lucknow, Uttar Pradesh</p>
             </div>
+            <button
+              className="btn btn-primary cta-contact-row"
+              onClick={() => (window.location.href = googleMapsLink)}
+            >
+              View on Google Maps
+            </button>
             <p className="cta-small">
               Prefer talking instead of filling forms? Just call or message.
               We&apos;ll help you understand if the program is right for you.
