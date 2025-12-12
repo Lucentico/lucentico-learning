@@ -161,7 +161,7 @@ const Hero = () => {
           </div>
 
           <p className="hero-meta">
-            Rajajipuram, Lucknow • ₹8,000/month • Only 10 seats per batch
+            Rajajipuram, Lucknow • ₹6,000/month • Only 10 seats per batch
           </p>
         </motion.div>
 

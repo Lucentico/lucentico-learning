@@ -25,10 +25,10 @@ const FeesSection = () => {
               <div className="fees-price-block">
                 <p className="fees-label">Monthly fee</p>
                 <p className="fees-price">
-                  ₹8,000<span>/month</span>
+                  ₹6,000<span>/month</span>
                 </p>
                 <p className="fees-total">
-                  6 months full-time • <strong>₹48,000 total</strong>
+                  6 months full-time • In-Office
                 </p>
               </div>
 
